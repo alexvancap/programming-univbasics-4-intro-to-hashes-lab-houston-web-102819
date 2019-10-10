@@ -31,7 +31,6 @@ def update_counting_hash(hash, key)
   # if the provided key is present, increment its value by 1
 
   new_hash = hash
-
   if new_hash[key]
     new_hash[key] += 1
   else
@@ -40,3 +39,58 @@ def update_counting_hash(hash, key)
   return new_hash
 
 end
+
+
+romeo_et_juliet = {
+  :montagues => {
+
+    :patriarch => {
+      :name => "Lord Montagne",
+      :age => "53"
+    },
+    :matriarch => {
+      :name => "Lady Montagneau",
+      :age => "54"
+    },
+    :hero => {
+      :name => "Romeo",
+      :age => "15"
+    },
+    :heroes_friends=> [{
+      :name => "Benvollio",
+      :age => "17"
+    },
+    {
+      :name => "Mercutio",
+      :age => "18"
+      }
+    ]
+  },
+
+  :capulet => {
+      :patriarch => {
+        :name => "Lord Capulet",
+        :age => "50"
+      },
+      :Matriarch => {
+        :name => "Lady Capoulet",
+        :age => "51"
+      },
+      :Heroine => {
+        :name => "Juliet",
+        :age => "15"
+      },
+      :Heroine_friends => [
+        {
+          :name => "Steven",
+          :age => "30",
+          :attitude => "Confused"
+        },
+        {
+          :name => "Nurse",
+          :age => "44",
+          :attitude => "worried"
+        }
+      ]
+    }
+  }
